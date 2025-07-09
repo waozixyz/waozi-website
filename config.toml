@@ -1,0 +1,57 @@
+# The URL the site will be built for
+base_url = "https://waozi.xyz"
+title = "Waozi - Creator & Developer"
+description = "Explore the digital cosmos of Waozi - innovative projects spanning from quantum-resistant authentication to decentralized social networks, all crafted with passion for privacy and user empowerment."
+
+# Using custom theme - no external theme needed
+
+# The default language, used in RSS and sitemap
+default_language = "en"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+
+# Configuration for the site
+[extra]
+# Your name
+author = "Waozi"
+# Your email
+email = "hello@waozi.xyz"
+# Your GitHub username
+github = "waozixyz"
+# Your Twitter/X username
+twitter = "waozixyz"
+# Your Nostr handle
+nostr = "waozi@ditto.pub"
+# Your Telegram username
+telegram = "waozixyz"
+
+# Custom galaxy theme configuration
+[extra.galaxy]
+# Enable particle animation
+particles = true
+# Number of stars in background
+star_count = 200
+# Enable floating objects
+floating_objects = true
+# Color scheme
+primary_color = "#4a90e2"
+secondary_color = "#7b68ee"
+accent_color = "#ff6b6b"
+background_color = "#0a0a0a"
+
+# Social links
+[extra.social]
+github = "https://github.com/waozixyz"
+twitter = "https://twitter.com/waozixyz"
+telegram = "https://t.me/waozixyz"
+nostr = "https://ditto.pub/waozi"
+email = "mailto:hello@waozi.xyz"

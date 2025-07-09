@@ -1,0 +1,380 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <!-- Galaxy Background -->
+    <div class="galaxy-background">
+        <div class="stars"></div>
+        <div class="nebula"></div>
+        <div class="floating-objects"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">WAOZI</a>
+            </div>
+            <div class="nav-links">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch-text">WAOZI</span>
+            </h1>
+            <p class="hero-subtitle">Creator & Developer</p>
+            <p class="hero-description">
+                Exploring the digital cosmos through privacy-first innovation
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                <a href="#contact" class="btn btn-secondary">Connect</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="planet-system">
+                <div class="planet planet-main"></div>
+                <div class="planet planet-moon"></div>
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Timeline -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Project Constellation</h2>
+            <p class="section-subtitle">A journey through time and innovation</p>
+            
+            <div class="timeline">
+                <!-- 2025 Projects -->
+                <div class="timeline-item" data-year="2025">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-year">2025</h3>
+                        <div class="projects-grid">
+                            <div class="project-card featured">
+                                <div class="project-icon">🚀</div>
+                                <h4>Kryonlabs</h4>
+                                <p>Cross-platform UI framework with declarative .kry language compiling to optimized .krb binaries. Features multiple rendering backends (WGPU, Ratatui, Raylib) and advanced layout engine.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Rust</span>
+                                    <span class="tag">UI Framework</span>
+                                    <span class="tag">Cross-platform</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://kryonlabs.com" class="project-link">Website</a>
+                                    <a href="https://docs.kryonlabs.com" class="project-link">Docs</a>
+                                    <a href="https://github.com/kryonlabs/kryon-compiler" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card featured">
+                                <div class="project-icon">🔐</div>
+                                <h4>Nymos</h4>
+                                <p>Privacy-first ecosystem including quantum-resistant authentication (QuID), anonymous cryptocurrency (Nym), decentralized social network (Axon), and privacy-preserving computing (NymCompute).</p>
+                                <div class="project-tags">
+                                    <span class="tag">Rust</span>
+                                    <span class="tag">Privacy</span>
+                                    <span class="tag">Blockchain</span>
+                                    <span class="tag">Social Network</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/waozixyz/quid" class="project-link">QuID</a>
+                                    <a href="https://github.com/waozixyz/nym" class="project-link">Nym</a>
+                                    <a href="https://github.com/waozixyz/axon" class="project-link">Axon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2024 Projects -->
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-year">2024</h3>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-icon">⚡</div>
+                                <h4>Katalis</h4>
+                                <p>Survival crafting game with complex resource management, automation systems, and real-time gameplay mechanics built with Rust and Bevy.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Rust</span>
+                                    <span class="tag">Game Dev</span>
+                                    <span class="tag">Bevy</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/waozixyz/katalis" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <div class="project-icon">🎠</div>
+                                <h4>Carousel</h4>
+                                <p>Image carousel application with modern UI, built for both native and web platforms using C and Emscripten.</p>
+                                <div class="project-tags">
+                                    <span class="tag">C</span>
+                                    <span class="tag">WebAssembly</span>
+                                    <span class="tag">UI</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/waozixyz/carousel" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2023 Projects -->
+                <div class="timeline-item" data-year="2023">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-year">2023</h3>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-icon">🧘</div>
+                                <h4>Quest</h4>
+                                <p>Personal life management app focused on habit tracking, task organization, and life visualization with cross-platform support.</p>
+                                <div class="project-tags">
+                                    <span class="tag">C</span>
+                                    <span class="tag">Productivity</span>
+                                    <span class="tag">Cross-platform</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="http://quest.naox.io/" class="project-link">Website</a>
+                                    <a href="https://github.com/waozixyz/quest" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <div class="project-icon">🌬️</div>
+                                <h4>Inner Breeze</h4>
+                                <p>Guided breathing meditation app based on the Wim Hof method, designed for mindfulness and stress relief.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Meditation</span>
+                                    <span class="tag">Wellness</span>
+                                    <span class="tag">Breathing</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://inbreeze.xyz" class="project-link">Website</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <div class="project-icon">🗿</div>
+                                <h4>Rocks</h4>
+                                <p>UI framework for Clay, providing an easy way to change renderers and use premade components for rapid development.</p>
+                                <div class="project-tags">
+                                    <span class="tag">C</span>
+                                    <span class="tag">UI Framework</span>
+                                    <span class="tag">Clay</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/waozixyz/rocks" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2022 Projects -->
+                <div class="timeline-item" data-year="2022">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-year">2022</h3>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-icon">🏰</div>
+                                <h4>Kasaival</h4>
+                                <p>Immersive game world with ECS architecture, procedural generation, and rich environmental systems built with Raylib.</p>
+                                <div class="project-tags">
+                                    <span class="tag">C</span>
+                                    <span class="tag">Game Dev</span>
+                                    <span class="tag">ECS</span>
+                                    <span class="tag">Raylib</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/waozixyz/kasaival" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <div class="project-icon">🌳</div>
+                                <h4>Algotree</h4>
+                                <p>Single header C library for algorithmically grown 2D and 3D trees with realistic branching patterns in Raylib.</p>
+                                <div class="project-tags">
+                                    <span class="tag">C</span>
+                                    <span class="tag">Procedural</span>
+                                    <span class="tag">Graphics</span>
+                                    <span class="tag">Raylib</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/waozixyz/algotree" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <div class="project-icon">🎯</div>
+                                <h4>Habits</h4>
+                                <p>Habit tracking application with beautiful UI, progress visualization, and motivation systems for building better routines.</p>
+                                <div class="project-tags">
+                                    <span class="tag">C</span>
+                                    <span class="tag">Productivity</span>
+                                    <span class="tag">Habits</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/waozixyz/habits-c" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2021 Projects -->
+                <div class="timeline-item" data-year="2021">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-year">2021</h3>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-icon">🎨</div>
+                                <h4>Luci</h4>
+                                <p>AI-powered creative assistant for image generation and artistic exploration, featuring multiple models and creative workflows.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">AI</span>
+                                    <span class="tag">Creative</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/waozixyz/luci" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <div class="project-icon">🌟</div>
+                                <h4>Astropets</h4>
+                                <p>3D virtual pet game with realistic physics, lighting effects, and immersive space environment using OpenGL.</p>
+                                <div class="project-tags">
+                                    <span class="tag">C</span>
+                                    <span class="tag">OpenGL</span>
+                                    <span class="tag">3D</span>
+                                    <span class="tag">Game Dev</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/waozixyz/astropets" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <div class="project-icon">🏔️</div>
+                                <h4>UXN</h4>
+                                <p>Minimalist virtual machine and development environment inspired by the UXN ecosystem, focusing on simplicity and creativity.</p>
+                                <div class="project-tags">
+                                    <span class="tag">C</span>
+                                    <span class="tag">VM</span>
+                                    <span class="tag">Minimalism</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/waozixyz/uxn" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About the Creator</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm Waozi, a passionate creator and developer who believes in the power of privacy-first technology to reshape our digital landscape. My journey spans from quantum-resistant authentication systems to decentralized social networks, always with a focus on user empowerment and freedom.</p>
+                    
+                    <p>Each project in my constellation represents a step toward a more private, secure, and user-centric digital future. Whether it's building UI frameworks that democratize cross-platform development or creating blockchain networks that prioritize anonymity, I'm committed to pushing the boundaries of what's possible.</p>
+                    
+                    <p>When I'm not coding, you'll find me exploring the intersection of technology and human experience, always seeking new ways to make our digital tools more humane and empowering.</p>
+                </div>
+                <div class="about-visual">
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-lang">rust</span>
+                            <span class="code-file">main.rs</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code>fn main() {
+    let vision = "Privacy-first future";
+    let passion = "User empowerment";
+    let method = "Innovation";
+    
+    loop {
+        create_project(vision, passion, method);
+        share_with_world();
+        iterate_and_improve();
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Connect Across the Cosmos</h2>
+            <p class="section-subtitle">Let's explore the digital frontier together</p>
+            
+            <div class="contact-grid">
+                <a href="{{ config.extra.social.github }}" class="contact-card">
+                    <div class="contact-icon">🐙</div>
+                    <h3>GitHub</h3>
+                    <p>@waozixyz</p>
+                </a>
+                
+                <a href="{{ config.extra.social.twitter }}" class="contact-card">
+                    <div class="contact-icon">🐦</div>
+                    <h3>X/Twitter</h3>
+                    <p>@waozixyz</p>
+                </a>
+                
+                <a href="{{ config.extra.social.telegram }}" class="contact-card">
+                    <div class="contact-icon">✈️</div>
+                    <h3>Telegram</h3>
+                    <p>@waozixyz</p>
+                </a>
+                
+                <a href="{{ config.extra.social.nostr }}" class="contact-card">
+                    <div class="contact-icon">⚡</div>
+                    <h3>Nostr</h3>
+                    <p>@waozi@ditto.pub</p>
+                </a>
+                
+                <a href="{{ config.extra.social.email }}" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>hello@waozi.xyz</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Waozi. Crafted with passion in the digital cosmos.</p>
+        </div>
+    </footer>
+    
+{% endblock %}

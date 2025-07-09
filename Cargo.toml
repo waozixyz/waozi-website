@@ -1,0 +1,13 @@
+[package]
+name = "waozi-website"
+version = "0.1.0"
+edition = "2021"
+description = "Waozi's personal website - A galaxy-themed showcase of projects and creativity"
+authors = ["Waozi <hello@waozi.xyz>"]
+license = "MIT"
+homepage = "https://waozi.xyz"
+repository = "https://github.com/waozixyz/waozi-website"
+
+[dependencies]
+# This is a Zola static site project
+# Dependencies are managed through Zola's system
