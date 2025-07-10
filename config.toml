@@ -29,8 +29,6 @@ email = "hello@waozi.xyz"
 github = "waozixyz"
 # Your Twitter/X username
 twitter = "waozixyz"
-# Your Nostr handle
-nostr = "waozi@ditto.pub"
 # Your Telegram username
 telegram = "waozixyz"
 
@@ -53,5 +51,4 @@ background_color = "#0a0a0a"
 github = "https://github.com/waozixyz"
 twitter = "https://twitter.com/waozixyz"
 telegram = "https://t.me/waozixyz"
-nostr = "https://ditto.pub/waozi"
 email = "mailto:hello@waozi.xyz"
