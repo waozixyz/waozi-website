@@ -396,7 +396,39 @@ section {
     margin-bottom: 3rem;
 }
 
-/* Timeline */
+/* Projects Oscillating Layout */
+.projects-oscillating {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* Increased spacing between projects */
+}
+
+.project-left {
+    align-self: flex-start;
+    max-width: 70%;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.project-right {
+    align-self: flex-end;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+.project-right .project-tags {
+    justify-content: flex-end;
+}
+
+.project-right .project-links {
+    justify-content: flex-end;
+}
+
+/* Timeline (Legacy - kept for compatibility) */
 .timeline {
     position: relative;
     max-width: 1000px;
@@ -724,6 +756,27 @@ section {
     
     .timeline-marker {
         left: 20px;
+    }
+    
+    /* Responsive oscillating layout */
+    .projects-oscillating {
+        gap: 3rem; /* Reduce spacing on mobile */
+    }
+    
+    .project-left,
+    .project-right {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+    
+    .project-right .project-tags {
+        justify-content: flex-start;
+    }
+    
+    .project-right .project-links {
+        justify-content: flex-start;
     }
     
     .projects-grid {
